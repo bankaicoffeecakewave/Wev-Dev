@@ -1,0 +1,124 @@
+/* Use an external stylesheet to style the HTML elements */
+
+/* Use a universal selector to apply some basic styles to all elements */
+* {
+    /* Remove the default margin and padding */
+    margin: 0;
+    padding: 0;
+    /* Use a box-sizing property to include the padding and border in the element's total width and height */
+    box-sizing: border-box;
+  }
+  
+  /* Use a header selector to style the header element */
+  header {
+    /* Use a display property to arrange the logo and the navigation bar in a row */
+    display: flex;
+    /* Use an align-items property to align the logo and the navigation bar vertically */
+    align-items: center;
+    /* Use a justify-content property to distribute the logo and the navigation bar evenly */
+    justify-content: space-between;
+    /* Use a background-color property to set the background color of the header */
+    background-color: #333;
+  }
+  
+  /* Use an image selector to style the logo image */
+  img {
+    /* Use a width property to set the width of the logo image */
+    width: 150px;
+  }
+  
+  /* Use a class selector to style the navigation bar */
+  .nav {
+    /* Use a display property to arrange the list items in a row */
+    display: flex;
+  }
+  
+  /* Use a descendant selector to style the list items in the navigation bar */
+  .nav li {
+    /* Use a list-style property to remove the default bullet points from the list items */
+    list-style: none;
+  }
+  
+  /* Use a descendant selector to style the links in the navigation bar */
+  .nav li a {
+    /* Use a color property to set the text color of the links */
+    color: white;
+    /* Use a text-decoration property to remove the default underline from the links */
+    text-decoration: none;
+    /* Use a padding property to add some space around the links */
+    padding: 10px;
+  }
+  
+  /* Use a pseudo-class selector to change the color of the links when hovered over */
+  .nav li a:hover {
+    color: yellow;
+  }
+  
+  /* Use a main selector to style the main element */
+  main {
+    /* Use a margin property to add some space around the main element */
+    margin: 20px;
+  }
+  
+  /* Use a heading selector to style the first level heading in the main element */
+  h1 {
+    /* Use a text-align property to center the heading text */
+    text-align: center;
+  }
+  
+  /* Use a paragraph selector to style the paragraph in the main element */
+  p {
+    /* Use a font-size property to set the font size of the paragraph text */
+    font-size: 18px;
+  }
+  
+  /* Use a class selector to style the news section in the main element */
+  .news {
+    /* Use a border property to add a border around the news section */
+    border: solid black 1px;
+  }
+  
+  /* Use a heading selector to style the second level heading in the news section */
+  .news h2 {
+    /* Use a background-color property to set the background color of the heading */
+    background-color: #333;
+    /* Use a color property to set the text color of the heading */
+    color: white;
+  }
+  
+  /* Use an ordered list selector to style the ordered list in the news section */
+  .news ol {
+    /* Use a list-style-type property to change the type of bullet points for the list items */
+    list-style-type: decimal-leading-zero;
+  }
+  
+  /* Use an ordered list descendant selector to style the span elements in the list items */
+  .news ol span {
+    /* Use a font-weight property to make the span text bold */
+    font-weight: bold;
+  }
+  
+  /* Use an ordered list descendant selector to style the links in the list items */
+  .news ol a {
+     /* Use a color property to set the text color of the links */ 
+     color: black; 
+     /* Use a text-decoration property to remove
+  the default underline from
+  the links */ 
+     text-decoration:
+  none; 
+  } 
+  
+  /*Use apseudo
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
